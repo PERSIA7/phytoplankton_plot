@@ -2,7 +2,7 @@
 library(ggplot2)
 
 # Load data
-data <- read.csv("~/Desktop/phytoplankton_plot/data/phytoplankton_data.csv", header =TRUE)
+data <- read.csv("~/mynewrepo/phytoplankton_plot/data/phytoplankton_data.csv", header =TRUE)
 
 # Make plot
 ggplot(data, aes(x=month, y=phytoplankton)) + 
@@ -11,4 +11,3 @@ ggplot(data, aes(x=month, y=phytoplankton)) +
        subtitle="units: milimoles/m3",
        caption="Source: NOAA, ERDDAP") +
   theme(text = element_text(size=15))
-
